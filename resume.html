@@ -1,0 +1,644 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Aastha Gade &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'resume';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="My sample book - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to My Machine Learning Portfolio 🚀
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fresume.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/resume.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Aastha Gade</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#education">🎓 Education</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-state-university-of-new-york-at-buffalo"><strong>The State University of New York at Buffalo</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mkssss-cummins-college-of-engineering-for-women-pune"><strong>MKSSS’s Cummins College of Engineering for Women, Pune</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skills">🛠️ Skills</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#work-experience">💼 Work Experience</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cyient-ltd-pune-india"><strong>Cyient Ltd., Pune, India</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fmep-equity-markets-analyst-fincrux-technologies-india"><strong>FMEP Equity Markets Analyst – Fincrux Technologies, India</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#research-projects">🔬 Research Projects</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assessing-climate-changes-impact-on-crop-yields"><strong>Assessing Climate Change’s Impact on Crop Yields</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brain-tumor-segmentation-using-u-net-architecture"><strong>Brain Tumor Segmentation Using U-NET Architecture</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ml-model-for-children-s-tv-ott-content-suitability"><strong>ML Model for Children’s TV/OTT Content Suitability</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sentiment-analysis-on-social-media-platforms"><strong>Sentiment Analysis on Social Media Platforms</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publications">📄 Publications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leadership-extracurricular-activities">🌟 Leadership &amp; Extracurricular Activities</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="aastha-gade">
+<h1>Aastha Gade<a class="headerlink" href="#aastha-gade" title="Link to this heading">#</a></h1>
+<p>📍 <strong>Buffalo, New York, United States</strong><br />
+📞 <strong>+1 (716) 275-3158</strong><br />
+📧 <a class="reference external" href="mailto:aasthaga&#37;&#52;&#48;buffalo&#46;edu">aasthaga<span>&#64;</span>buffalo<span>&#46;</span>edu</a><br />
+🔗 <a class="reference external" href="https://www.linkedin.com/in/aastha-gade-0086a1237">LinkedIn Profile</a></p>
+<hr class="docutils" />
+<section id="education">
+<h2>🎓 Education<a class="headerlink" href="#education" title="Link to this heading">#</a></h2>
+<section id="the-state-university-of-new-york-at-buffalo">
+<h3><strong>The State University of New York at Buffalo</strong><a class="headerlink" href="#the-state-university-of-new-york-at-buffalo" title="Link to this heading">#</a></h3>
+<p>📅 <em>Aug 2024 – Dec 2025</em><br />
+<strong>Master of Science in Engineering Science – Data Science</strong></p>
+<ul class="simple">
+<li><p>Coursework: Python Programming, Data Mining, Statistics, Machine Learning, Data Visualization, DBMS, Query Lang, Data Modeling, Mathematics, Probability Theory</p></li>
+</ul>
+</section>
+<section id="mkssss-cummins-college-of-engineering-for-women-pune">
+<h3><strong>MKSSS’s Cummins College of Engineering for Women, Pune</strong><a class="headerlink" href="#mkssss-cummins-college-of-engineering-for-women-pune" title="Link to this heading">#</a></h3>
+<p>📅 <em>Feb 2021 – June 2024</em><br />
+<strong>Bachelor of Technology in Electronics and Telecommunications Engineering</strong></p>
+<ul class="simple">
+<li><p><strong>CGPA</strong>: 8.21/10</p></li>
+<li><p>Coursework: ML Algorithms, Deep Learning, Python, Artificial Intelligence, Big Data Analytics, Data Visualization, Data Structures and Algorithms, DBMS, Java</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="skills">
+<h2>🛠️ Skills<a class="headerlink" href="#skills" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Languages</strong>: Python, Java, R, DBMS, SQL</p></li>
+<li><p><strong>Software</strong>: MATLAB, Microsoft Power BI, Google Colab, Excel</p></li>
+<li><p><strong>Certifications</strong>: Microsoft – Azure Developer Associate</p></li>
+<li><p><strong>Other Skills</strong>: Research Skills, Equity Research</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="work-experience">
+<h2>💼 Work Experience<a class="headerlink" href="#work-experience" title="Link to this heading">#</a></h2>
+<section id="cyient-ltd-pune-india">
+<h3><strong>Cyient Ltd., Pune, India</strong><a class="headerlink" href="#cyient-ltd-pune-india" title="Link to this heading">#</a></h3>
+<p><strong>Software DET [Digital Engineering Tech] Intern</strong><br />
+📅 <em>June 2023 – Dec 2023</em></p>
+<ul class="simple">
+<li><p>Created a <strong>GUI Application</strong> using Python-Tkinter for an XVL Application.</p></li>
+<li><p>Developed a secure <strong>website for operator authentication</strong> using HTML, CSS, and Flask, supporting 6+ client operators.</p></li>
+<li><p>Designed a <strong>project tracking web application</strong> with Google App Sheets, reducing reporting time by 40%.</p></li>
+<li><p>Built <strong>Power BI dashboards</strong> to analyze financial and client data, cutting manual data analysis time by 30%.</p></li>
+</ul>
+</section>
+<section id="fmep-equity-markets-analyst-fincrux-technologies-india">
+<h3><strong>FMEP Equity Markets Analyst – Fincrux Technologies, India</strong><a class="headerlink" href="#fmep-equity-markets-analyst-fincrux-technologies-india" title="Link to this heading">#</a></h3>
+<p>📅 <em>Feb 2022 – Apr 2022</em></p>
+<ul class="simple">
+<li><p>Conducted <strong>equity research projects</strong> on BSE 500 listed companies in banking and technology sectors.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="research-projects">
+<h2>🔬 Research Projects<a class="headerlink" href="#research-projects" title="Link to this heading">#</a></h2>
+<section id="assessing-climate-changes-impact-on-crop-yields">
+<h3><strong>Assessing Climate Change’s Impact on Crop Yields</strong><a class="headerlink" href="#assessing-climate-changes-impact-on-crop-yields" title="Link to this heading">#</a></h3>
+<p>📅 <em>Jan 2024 – June 2024</em></p>
+<ul class="simple">
+<li><p>Conducted <strong>ML-based regression analysis</strong> (Random Forest, Decision Tree, SVM) with 80.98% accuracy.</p></li>
+<li><p>Designed an <strong>interactive BI dashboard</strong> to study potential impacts of 12 target variables on crop production.</p></li>
+</ul>
+</section>
+<section id="brain-tumor-segmentation-using-u-net-architecture">
+<h3><strong>Brain Tumor Segmentation Using U-NET Architecture</strong><a class="headerlink" href="#brain-tumor-segmentation-using-u-net-architecture" title="Link to this heading">#</a></h3>
+<p>📅 <em>Jan 2023 – May 2023</em></p>
+<ul class="simple">
+<li><p>Implemented <strong>3 deep learning models</strong> (U-NET, SegNet, Seg-U-Net) with 98% accuracy.</p></li>
+<li><p>Performed <strong>data augmentation</strong> and trained CNN using AdamMax optimizer.</p></li>
+</ul>
+</section>
+<section id="ml-model-for-children-s-tv-ott-content-suitability">
+<h3><strong>ML Model for Children’s TV/OTT Content Suitability</strong><a class="headerlink" href="#ml-model-for-children-s-tv-ott-content-suitability" title="Link to this heading">#</a></h3>
+<p>📅 <em>Jan 2022 – May 2022</em></p>
+<ul class="simple">
+<li><p>Built an ML model using <strong>Naïve Bayes</strong> and a data visualization module, achieving 85% accuracy.</p></li>
+</ul>
+</section>
+<section id="sentiment-analysis-on-social-media-platforms">
+<h3><strong>Sentiment Analysis on Social Media Platforms</strong><a class="headerlink" href="#sentiment-analysis-on-social-media-platforms" title="Link to this heading">#</a></h3>
+<p>📅 <em>Oct 2024 – Ongoing</em></p>
+<ul class="simple">
+<li><p>Improved accuracy from 65% to 95% using <strong>LSTM, Random Forest, and SVM</strong> models.</p></li>
+<li><p>Built an <strong>interactive dashboard</strong> with Snowflake and Streamlit for user behavior analysis.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="publications">
+<h2>📄 Publications<a class="headerlink" href="#publications" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>“Design and Implementation of A Digital Hearing Aid System with Improved Speech Intelligibility”</strong><br />
+Presented and published in <a class="reference external" href="https://ieeexplore.ieee.org/xpl/conhome/10269797/proceeding">IEEE ASIANCON CONFERENCE 2023</a>.<br />
+📅 <em>Oct 2023</em></p></li>
+<li><p><strong>“Implementation and Empirical Analysis of Modified U-Net Architecture for Brain Tumor Segmentation”</strong><br />
+Accepted for publication in <em>IEEE International Conference on AIML Applications for Engineering &amp; Technology – ICAET-25</em>.<br />
+📅 <em>Jan 2025</em></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="leadership-extracurricular-activities">
+<h2>🌟 Leadership &amp; Extracurricular Activities<a class="headerlink" href="#leadership-extracurricular-activities" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Welfare of Elderly Project</strong></p>
+<ul>
+<li><p>Served as CFO for the “Welfare of Elderly” project under the Wadhwani Foundation, handling venture creation, solution drafting, and competitor analysis for 4+ competitors.</p></li>
+</ul>
+</li>
+<li><p><strong>Co-Lead, IEEE Cummins College Student Branch</strong></p>
+<ul>
+<li><p>Mentored students on projects and IEEE activities.</p></li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#education">🎓 Education</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-state-university-of-new-york-at-buffalo"><strong>The State University of New York at Buffalo</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mkssss-cummins-college-of-engineering-for-women-pune"><strong>MKSSS’s Cummins College of Engineering for Women, Pune</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skills">🛠️ Skills</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#work-experience">💼 Work Experience</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cyient-ltd-pune-india"><strong>Cyient Ltd., Pune, India</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fmep-equity-markets-analyst-fincrux-technologies-india"><strong>FMEP Equity Markets Analyst – Fincrux Technologies, India</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#research-projects">🔬 Research Projects</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assessing-climate-changes-impact-on-crop-yields"><strong>Assessing Climate Change’s Impact on Crop Yields</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brain-tumor-segmentation-using-u-net-architecture"><strong>Brain Tumor Segmentation Using U-NET Architecture</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ml-model-for-children-s-tv-ott-content-suitability"><strong>ML Model for Children’s TV/OTT Content Suitability</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sentiment-analysis-on-social-media-platforms"><strong>Sentiment Analysis on Social Media Platforms</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publications">📄 Publications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leadership-extracurricular-activities">🌟 Leadership &amp; Extracurricular Activities</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
